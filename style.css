@@ -1,0 +1,79 @@
+.game {
+    width: 600px;
+    height: 250px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+    background-image: url(img/bg2.png);
+}
+
+#pluto {
+    width: 100px;
+    height: 100px;
+    background-image: url(img/giphy\ \(1\).gif);
+    background-size: 100px 100px;
+    position: relative;
+    top: 160px;
+}
+
+#cactus {
+    width: 30px;
+    height: 50px;
+    background-image: url(img/mush.png);
+    background-size: 30px 50px;
+    position: relative;
+    top: 105px;
+    left: 580px;
+    animation: cactusMov 2s infinite linear;
+}
+
+#lose {
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    top: -250px;
+    position: relative;
+}
+
+@keyframes cactusMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 100px;
+    }
+    50% {
+        top: 30px;
+    }
+    80% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+#score {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 10px;
+    left: 475px;
+}
+
+#lose {
+    border-radius: 10%;
+    border: 5px solid #000;
+}
